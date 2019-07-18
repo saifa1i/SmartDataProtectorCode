@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_900"
+    tools:context=".RateUsActivity"
+    tools:layout_editor_absoluteY="50dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+            <ImageView
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/green_200"
+                android:src="@drawable/ic_rate_review_black_24dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_xlarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate Our Application"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/blue_grey_500"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <RatingBar
+                android:id="@+id/rattingbar"
+                style="@style/Widget.AppCompat.RatingBar"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:stepSize="0.25"
+                android:visibility="visible" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_middle" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_medium" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:background="@drawable/btn_rounded_green_300"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:id="@+id/btnratesubmit"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_grey_900" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

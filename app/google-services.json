@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "316986104167",
+    "firebase_url": "https://smartdataprotectfyp.firebaseio.com",
+    "project_id": "smartdataprotectfyp",
+    "storage_bucket": "smartdataprotectfyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316986104167:android:817e7f9684d11e7e",
+        "android_client_info": {
+          "package_name": "com.example.smartdataprotect_fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316986104167-a263dsig0jsghlqrtmv8fp6ngteh3ku2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartdataprotect_fyp",
+            "certificate_hash": "f1bc7e20349b922695bb30d31e32c6ebd59f0e2b"
+          }
+        },
+        {
+          "client_id": "316986104167-6kjr0kn9qq3t6h605dq2aejvljhkhfkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfz03qP0CO5jWNEMe8Rpge7TJpMsAWEws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316986104167-6kjr0kn9qq3t6h605dq2aejvljhkhfkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

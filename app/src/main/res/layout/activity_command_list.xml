@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_900"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CommandList">
+
+    <!--
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar" />
+
+        </android.support.design.widget.AppBarLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_xlarge"
+            android:background="@color/overlay_light_90"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xlarge">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="145dp"
+                        android:layout_height="145dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/app_logo_round" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enter your COMMANDS OR CODE to related functions"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/blue_grey_500"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/txtusercmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:visibility="invisible"
+                        android:hint="Enter Your UserName"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/gpscmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="GPS Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/ringcmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="Ring Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/custommessagecmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="Custom Message Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/datawipecmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="Data Wipe Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/unlockcmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="Unlock Device Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="text"
+                        android:id="@+id/callcmd"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:hint="Call Forwarding Code"
+                        android:textColorHint="@color/blue_100"
+                        android:singleLine="true"
+                        android:textColor="@color/blue_grey_300"
+                        android:theme="@style/EditText.Grey" />
+
+                    <Button
+                        android:id="@+id/btncmdSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:background="@drawable/btn_rounded_accent"
+                        android:text="Submit"
+
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

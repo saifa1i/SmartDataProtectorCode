@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartdataprotect_fyp">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".NewPasswordActivity" />
+        <activity android:name=".PhoneNumberVerification" />
+        <activity android:name=".RateUsActivity" />
+        <activity android:name=".helpUsActivity" />
+        <activity android:name=".UpdateCommand" />
+        <activity android:name=".UnlockActivity" />
+        <activity android:name=".CallForwardingActivity" />
+        <activity android:name=".DataWipeActivity" />
+        <activity android:name=".CustomMessageActivity" />
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".RingingActivity" />
+        <activity android:name=".CommandList" />
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AdminSupport"
+            android:label="@string/app_name"
+            android:description="@string/app_description"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            >
+
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

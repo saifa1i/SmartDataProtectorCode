@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/updateCommands"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Update Commands" />
+        
+        <item
+            android:id="@+id/rateus"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Rate Us" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="LogOut" />
+        </menu>
+    </item>
+
+</menu>
